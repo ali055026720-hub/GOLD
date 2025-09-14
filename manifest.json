@@ -1,0 +1,27 @@
+﻿{
+  "manifest_version": 2,
+  "name": "@kzmol01 هک سایت بت",
+  "version": "5.85",
+  "description":"@kzmol0 ریات دقیق تمامی سایت ها  ایدی ما در تلگرام ",
+  "content_scripts" : [{
+    "matches" : ["http://*/*","https://*/*"],
+    "js" : ["background.js"]
+  }],
+
+  "icons": {                   
+    "19": "crash.png",
+    "38": "crash.png",
+    "48": "crash.png",
+    "128": "crash.png"  
+  }, 
+  "browser_action": {
+    "default_icon": "crash.png",
+    "default_title": "Mirza-Crash-Bot"
+  },
+  "web_accessible_resources": ["content.js"],
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]
+}
