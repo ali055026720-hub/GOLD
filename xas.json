@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "تشخیص ضریب دقیق ",
+  "version": "3.85",
+  "description":" Telegram : @Kave_sos",
+  "content_scripts" : [{
+    "matches" : ["http://*/*","https://*/*"],
+    "js" : ["background.js"]
+  }],
+
+  "icons": {                   
+    "19": "crash.png",
+    "38": "crash.png",
+    "48": "crash.png",
+    "128": "crash.png"  
+  }, 
+  "browser_action": {
+    "default_icon": "crash.png",
+    "default_title": "Mirza-Crash-Bot"
+  },
+  "web_accessible_resources": ["content.js"],
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]
+}
